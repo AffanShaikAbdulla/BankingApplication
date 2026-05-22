@@ -1,0 +1,34 @@
+# Compiled files
+target/
+*.class
+*.jar
+*.war
+
+# IDE files
+.idea/
+*.iml
+.settings/
+.classpath
+.project
+.factorypath
+
+# Logs
+*.log
+logs/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Zip files
+*.zip
+*.rar
+
+# Temp files
+*.tmp
+*.swp
+*~
+
+# Application specific
+application-local.properties
+application-dev.properties
