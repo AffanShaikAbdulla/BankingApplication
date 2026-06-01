@@ -1,34 +1,42 @@
-# Compiled files
-target/
-*.class
-*.jar
-*.war
+# Maven build output
+**/target/
+**/target/**/*
+
+# Generated files
+**/META-INF/
+**/MANIFEST.MF
+
+# Java compiled files
+**/*.class
+**/*.jar
 
 # IDE files
+.settings/
+.project
+.classpath
 .idea/
 *.iml
-.settings/
-.classpath
-.project
-.factorypath
-
-# Logs
-*.log
-logs/
+.vscode/
 
 # OS files
 .DS_Store
 Thumbs.db
+desktop.ini
 
-# Zip files
+# Logs
+**/*.log
+**/logs/
+
+# Temporary files
+**/*.tmp
+**/*.swp
+**/*.bak
+notepad
 *.zip
-*.rar
 
-# Temp files
-*.tmp
-*.swp
-*~
+# Docker
+.dockerignore
 
 # Application specific
-application-local.properties
-application-dev.properties
+**/application-local.properties
+**/application-dev.properties
