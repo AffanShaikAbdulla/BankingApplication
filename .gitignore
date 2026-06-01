@@ -45,3 +45,32 @@ notepad
 **/mvnw
 **/mvnw.cmd
 **/.mvn/
+# Maven wrapper (CI/CD handles builds, not the repo)
+mvnw
+mvnw.cmd
+.mvn/
+
+# IDE local files (block all variants)
+*.tmp
+notepad
+
+# Maven wrapper (not needed)
+**/mvnw
+**/mvnw.cmd
+**/.mvn/
+
+# Generated files
+**/META-INF/
+**/target/
+
+# Temporary files
+**/notepad
+**/*.tmp
+**/*.log
+
+# IDE files
+**/.settings/
+**/.project
+**/.classpath
+**/.idea/
+**/*.iml
