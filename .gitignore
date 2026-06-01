@@ -12,8 +12,8 @@
 
 # IDE files
 .settings/
-.project/
-.classpath/
+.project
+.classpath
 .idea/
 *.iml
 .vscode/
