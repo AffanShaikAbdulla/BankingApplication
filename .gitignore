@@ -1,34 +1,21 @@
-# Compiled files
-target/
-*.class
-*.jar
-*.war
+# Maven build output
+**/target/
+**/target/**/*
+
+# Java compiled files
+**/*.class
+**/*.jar
 
 # IDE files
+.settings/
+.project
+.classpath
 .idea/
 *.iml
-.settings/
-.classpath
-.project
-.factorypath
-
-# Logs
-*.log
-logs/
 
 # OS files
 .DS_Store
 Thumbs.db
 
-# Zip files
-*.zip
-*.rar
-
-# Temp files
-*.tmp
-*.swp
-*~
-
-# Application specific
-application-local.properties
-application-dev.properties
+# Generated manifest files
+**/META-INF/MANIFEST.MF
