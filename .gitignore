@@ -40,3 +40,12 @@ notepad
 # Application specific
 **/application-local.properties
 **/application-dev.properties
+
+# Maven wrapper (CI/CD handles builds, not the repo)
+mvnw
+mvnw.cmd
+.mvn/
+
+# IDE local files (block all variants)
+*.tmp
+notepad
