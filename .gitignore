@@ -1,34 +1,33 @@
-# Compiled files
-target/
-*.class
-*.jar
-*.war
+# Maven build output
+**/target/
+**/target/**/*
+
+# Generated files
+**/META-INF/
+**/MANIFEST.MF
+
+# Java compiled files
+**/*.class
+**/*.jar
+
+# Maven wrapper (never commit these)
+**/mvnw
+**/mvnw.cmd
+**/.mvn/
+
+# Temporary files
+**/notepad
+**/*.tmp
+**/*.log
 
 # IDE files
+.settings/
+.project
+.classpath
 .idea/
 *.iml
-.settings/
-.classpath
-.project
-.factorypath
-
-# Logs
-*.log
-logs/
+.vscode/
 
 # OS files
 .DS_Store
 Thumbs.db
-
-# Zip files
-*.zip
-*.rar
-
-# Temp files
-*.tmp
-*.swp
-*~
-
-# Application specific
-application-local.properties
-application-dev.properties
