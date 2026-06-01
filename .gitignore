@@ -2,20 +2,46 @@
 **/target/
 **/target/**/*
 
+# Generated files
+**/META-INF/
+**/MANIFEST.MF
+
 # Java compiled files
 **/*.class
 **/*.jar
 
 # IDE files
 .settings/
-.project
-.classpath
+.project/
+.classpath/
 .idea/
 *.iml
+.vscode/
 
 # OS files
 .DS_Store
 Thumbs.db
+desktop.ini
 
-# Generated manifest files
-**/META-INF/MANIFEST.MF
+# Logs
+**/*.log
+**/logs/
+
+# Temporary files
+**/*.tmp
+**/*.swp
+**/*.bak
+notepad
+*.zip
+
+# Docker
+.dockerignore
+
+# Application specific
+**/application-local.properties
+**/application-dev.properties
+
+# Maven wrapper (not needed in repo)
+**/mvnw
+**/mvnw.cmd
+**/.mvn/
