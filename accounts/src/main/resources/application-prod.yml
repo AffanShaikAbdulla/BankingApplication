@@ -1,0 +1,9 @@
+build:
+  version: "3.0"
+
+accounts:
+  message: "Welcome to account related prod APIs"
+  contactDetails:
+    name: "vivek"
+    email: "vivek@okaxis.com"
+    onCallSupport: "800188278"
