@@ -2,6 +2,18 @@ package com.fintech.accounts;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+<<<<<<< HEAD
+import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
+
+@SpringBootApplication
+@EnableJpaAuditing(auditorAwareRef = "auditAwareImpl")
+public class AccountsApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(AccountsApplication.class, args);
+    }
+}
+=======
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 //import org.springframework.boot.persistence.autoconfigure.EntityScan;
 import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
@@ -19,3 +31,4 @@ public class AccountsApplication {
 	}
 
 }
+>>>>>>> main
