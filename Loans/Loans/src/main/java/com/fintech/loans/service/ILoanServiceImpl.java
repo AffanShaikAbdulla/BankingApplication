@@ -60,7 +60,7 @@ public class ILoanServiceImpl implements ILoanService {
     public boolean updateLoan(LoansDto loansDto) {
 
         Loans loans = loansRepository
-                .findByLoanNumber(loansDto.getLoanNumber())
+                .findByLoanNumber(loansDto.getLoanNumber()) 
                 .orElseThrow(() ->
                         new ResourceNotFoundException(
                                 "Loan",
