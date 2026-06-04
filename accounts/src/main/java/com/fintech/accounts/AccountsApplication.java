@@ -15,7 +15,7 @@ public class AccountsApplication {
 }
 =======
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
-import org.springframework.boot.persistence.autoconfigure.EntityScan;
+//import org.springframework.boot.persistence.autoconfigure.EntityScan;
 import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
