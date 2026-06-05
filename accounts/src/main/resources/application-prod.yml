@@ -2,7 +2,7 @@ build:
   version: "3.0"
 
 accounts:
-  message: "Welcome to account related prod APIs"
+  message: "Welcome to account related webhook APIs"
   contactDetails:
     name: "vivek"
     email: "vivek@okaxis.com"
