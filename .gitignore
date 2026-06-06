@@ -33,3 +33,7 @@ Thumbs.db
 application-local.properties
 application-dev.properties
 banking-config/
+**/target/
+**/bin/
+**/*.class
+structure.txt
