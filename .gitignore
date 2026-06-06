@@ -1,35 +1,75 @@
-# Compiled files
-target/
-*.class
-*.jar
-*.war
+# Maven build output
+
+**/target/
+**/target/**/*
+
+# Java compiled files
+
+**/*.class
+**/*.jar
+**/*.war
 
 # IDE files
+
+.settings/
+.project/
+.classpath/
 .idea/
 *.iml
-.settings/
-.classpath
-.project
+.vscode/
 .factorypath
 
-# Logs
-*.log
-logs/
-
 # OS files
+
 .DS_Store
 Thumbs.db
+desktop.ini
 
-# Zip files
+# Logs
+
+**/*.log
+**/logs/
+logs/
+
+# Temporary files
+
+**/*.tmp
+**/*.swp
+**/*.bak
+*~
+
+# Archives
+
 *.zip
 *.rar
 
-# Temp files
-*.tmp
-*.swp
-*~
+# Docker
+
+.dockerignore
 
 # Application specific
+
 application-local.properties
 application-dev.properties
+**/application-local.properties
+**/application-dev.properties
+
+# Ignore local config repository
+
 banking-config/
+
+# Generated folders
+
+**/bin/
+
+# Maven wrapper (if you don't want it tracked)
+
+# **/mvnw
+
+# **/mvnw.cmd
+
+# **/.mvn/
+
+# Utility files
+
+structure.txt
