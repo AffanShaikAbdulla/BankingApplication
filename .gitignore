@@ -1,83 +1,75 @@
-<<<<<<< HEAD
 # Maven build output
+
 **/target/
 **/target/**/*
 
-# Generated files
-**/META-INF/
-**/MANIFEST.MF
-
 # Java compiled files
+
 **/*.class
 **/*.jar
+**/*.war
 
 # IDE files
+
 .settings/
 .project/
 .classpath/
 .idea/
 *.iml
 .vscode/
-=======
-# Compiled files
-target/
-*.class
-*.jar
-*.war
-
-# IDE files
-.idea/
-*.iml
-.settings/
-.classpath
-.project
 .factorypath
 
-# Logs
-*.log
-logs/
->>>>>>> main
-
 # OS files
+
 .DS_Store
 Thumbs.db
-<<<<<<< HEAD
 desktop.ini
 
 # Logs
+
 **/*.log
 **/logs/
+logs/
 
 # Temporary files
+
 **/*.tmp
 **/*.swp
 **/*.bak
-notepad
-*.zip
+*~
 
-# Docker
-.dockerignore
+# Archives
 
-# Application specific
-**/application-local.properties
-**/application-dev.properties
-
-# Maven wrapper (not needed in repo)
-**/mvnw
-**/mvnw.cmd
-**/.mvn/
-=======
-
-# Zip files
 *.zip
 *.rar
 
-# Temp files
-*.tmp
-*.swp
-*~
+# Docker
+
+.dockerignore
 
 # Application specific
+
 application-local.properties
 application-dev.properties
->>>>>>> main
+**/application-local.properties
+**/application-dev.properties
+
+# Ignore local config repository
+
+banking-config/
+
+# Generated folders
+
+**/bin/
+
+# Maven wrapper (if you don't want it tracked)
+
+# **/mvnw
+
+# **/mvnw.cmd
+
+# **/.mvn/
+
+# Utility files
+
+structure.txt
