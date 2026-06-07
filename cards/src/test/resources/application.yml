@@ -1,0 +1,19 @@
+spring:
+  cloud:
+    config:
+      enabled: false
+  config:
+    import: ""
+  autoconfigure:
+    exclude:
+      - org.springframework.boot.autoconfigure.amqp.RabbitAutoConfiguration
+
+build:
+  version: "1.0"
+
+cards:
+  message: "Welcome to cards API"
+  contactDetails:
+    name: "Cards Support"
+    email: "cards@fintech.com"
+    onCallSupport: "8888888888"
