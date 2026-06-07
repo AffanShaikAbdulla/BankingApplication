@@ -1,16 +1,16 @@
 package com.fintech.accounts.controller;
 
-<<<<<<< HEAD
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
-=======
+
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.env.Environment;
 import org.springframework.data.annotation.Version;
 import org.springframework.http.HttpStatus;import org.springframework.http.HttpStatusCode;
->>>>>>> main
+
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
@@ -23,10 +23,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.fintech.accounts.constants.AccountConstants;
-<<<<<<< HEAD
-=======
+
 import com.fintech.accounts.dto.AccountContactInfoDto;
->>>>>>> main
+
 import com.fintech.accounts.dto.CustomerDTO;
 import com.fintech.accounts.dto.ResponseDTO;
 import com.fintech.accounts.service.iAccountsService;
@@ -34,24 +33,23 @@ import com.fintech.accounts.service.iAccountsService;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Pattern;
 
-<<<<<<< HEAD
-=======
 
->>>>>>> main
+
+
 @RestController
 @RequestMapping(path = "/api", produces = MediaType.APPLICATION_JSON_VALUE)
 @Validated
 public class AccountController {
 	private iAccountsService accountsService;
-<<<<<<< HEAD
-=======
+
+
 	@Value("${build.version}")
 	private String buildVersion;
 	@Autowired
 	private Environment environment;
 	@Autowired
 	private AccountContactInfoDto accountContactInfoDto;
->>>>>>> main
+
 	
 	public AccountController(iAccountsService accountsService) {
 		this.accountsService = accountsService;
@@ -86,8 +84,7 @@ public class AccountController {
 	                    .body(new ResponseDTO(AccountConstants.STATUS_417, AccountConstants.MESSAGE_417_DELETE));
 	        } 
 	 }
-<<<<<<< HEAD
-=======
+
 	 @GetMapping("/build-info")
 	 public ResponseEntity getBuildInfo() {
 		 return ResponseEntity.status(HttpStatus.OK).body(buildVersion);
@@ -97,5 +94,4 @@ public class AccountController {
 		 return ResponseEntity.status(HttpStatus.OK).body(accountContactInfoDto);
 	 }
 	 
->>>>>>> main
 }

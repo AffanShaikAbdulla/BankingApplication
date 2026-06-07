@@ -2,12 +2,11 @@ package com.fintech.cards.entity;
 
 import java.time.LocalDateTime;
 
-import org.springframework.boot.actuate.audit.listener.AuditListener;
-import org.springframework.boot.persistence.autoconfigure.EntityScan;
 import org.springframework.data.annotation.CreatedBy;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedBy;
 import org.springframework.data.annotation.LastModifiedDate;
+import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.EntityListeners;
@@ -16,24 +15,27 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 
+@Getter
+@Setter
+@ToString
 @MappedSuperclass
-@EntityListeners(AuditListener.class)
-@Getter @Setter@ToString
+@EntityListeners(AuditingEntityListener.class)
 public class BaseEntity {
+
 	@CreatedDate
-    @Column(updatable = false)
-    private LocalDateTime createdAt;
+	@Column(updatable = false)
+	private LocalDateTime createdAt;
 
-    @CreatedBy
-    @Column(updatable = false)
-    private String createdBy;
+	@CreatedBy
+	@Column(updatable = false)
+	private String createdBy;
 
-    @LastModifiedDate
-    @Column(insertable = false)
-    private LocalDateTime updatedAt;
+	@LastModifiedDate
+	@Column(insertable = false)
+	private LocalDateTime updatedAt;
 
-    @LastModifiedBy
-    @Column(insertable = false)
-    private String updatedBy;
+	@LastModifiedBy
+	@Column(insertable = false)
+	private String updatedBy;
 
 }
