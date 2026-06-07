@@ -1,0 +1,55 @@
+spring:
+  application:
+    name: loans
+
+  config:
+    import: "optional:configserver:${CONFIG_SERVER_URL:http://localhost:8888}"
+
+  profiles:
+    active: ${SPRING_PROFILES_ACTIVE:dev}
+
+  datasource:
+    url: jdbc:h2:mem:loansdb
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: ""
+
+  h2:
+    console:
+      enabled: true
+
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+  rabbitmq:
+    host: ${RABBITMQ_HOST:localhost}
+    port: 5672
+    username: guest
+    password: guest
+
+logging:
+  level:
+    com.fintech: DEBUG
+    org.hibernate.SQL: DEBUG
+
+server:
+  port: 8090
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+build:
+  version: "1.0"
+
+loans:
+  message: "Welcome to loans API"
+  contactDetails:
+    name: "Loans Support"
+    email: "loans@fintech.com"
+    onCallSupport: "7777777777"

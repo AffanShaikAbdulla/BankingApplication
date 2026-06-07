@@ -1,0 +1,19 @@
+spring:
+  cloud:
+    config:
+      enabled: false
+  config:
+    import: ""
+  autoconfigure:
+    exclude:
+      - org.springframework.boot.autoconfigure.amqp.RabbitAutoConfiguration
+
+build:
+  version: "1.0"
+
+loans:
+  message: "Welcome to loans API"
+  contactDetails:
+    name: "Loans Support"
+    email: "loans@fintech.com"
+    onCallSupport: "7777777777"
